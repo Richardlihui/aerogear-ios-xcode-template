@@ -37,29 +37,24 @@
                   <key>Definitions</key>
                   <dict>
                      <key>../Podfile:aerogear</key>
-                     <string>pod &apos;AeroGear&apos;, &apos;1.6.0&apos;</string>
-                     <key>___PACKAGENAME___-Prefix.pch:objC:importSystemConfiguration</key>
+                     <string>pod &apos;AeroGear&apos;, &apos;1.6.1&apos;</string>
+                     <key>importSystemConfiguration</key>
                      <string>#import &lt;SystemConfiguration/SystemConfiguration.h&gt;</string>
-                     <key>___PACKAGENAME___-Prefix.pch:objC:importCoreServices</key>
+                     <key>importCoreServices</key>
                      <string>#import &lt;MobileCoreServices/MobileCoreServices.h&gt;</string>
-                     <key>___VARIABLE_classPrefix:identifier___AppDelegate.h:methods:viewController</key>
+                     <key>AppDelegate.h:interface:navigation</key>
                      <string>@property (strong, nonatomic) UINavigationController *navigationController;</string>
-                     <key>___VARIABLE_classPrefix:identifier___AppDelegate.m:import:___VARIABLE_classPrefix:identifier___ViewController.h</key>
-                     <string>#import "___VARIABLE_classPrefix:identifier___ViewController.h"</string>
-                     <key>___VARIABLE_classPrefix:identifier___AppDelegate.m:applicationdidFinishLaunchingWithOptions:setup</key>
-                     <string>
-UIViewController *viewController = [[___VARIABLE_classPrefix:identifier___ViewController alloc] initWithStyle:UITableViewStylePlain];
+                     <key>AppDelegate.m:implementation:methods:applicationdidFinishLaunchingWithOptions:body:setup</key>
+                     <string>UIViewController *viewController = [[ViewController alloc] initWithStyle:UITableViewStylePlain];
 self.navigationController = [[UINavigationController alloc] initWithRootViewController:viewController];
 self.window.rootViewController = self.navigationController;</string>
-                     <key>Indent</key>
-                     <integer>1</integer>
                   </dict>
                   <key>Nodes</key>
                   <array>
-                     <string>___VARIABLE_classPrefix:identifier___AppDelegate.h:class:___VARIABLE_classPrefix:identifier___ViewController</string>
-                     <string>___VARIABLE_classPrefix:identifier___AppDelegate.h:methods:viewController</string>
-                     <string>___VARIABLE_classPrefix:identifier___AppDelegate.m:import:___VARIABLE_classPrefix:identifier___ViewController.h</string>
-                     <string>../Podfile:aerogear</string>
+                     <string>../Podfile:aerogear</string>     
+                     <string>AppDelegate.h:interface:navigation</string>      
+                     <string>AppDelegate.m:imports:importHeader:ViewController.h</string>                     
+                     <string>AppDelegate.m:implementation:methods:applicationdidFinishLaunchingWithOptions:body:setup</string>                     
                      <string>___PACKAGENAME___-Prefix.pch:objC:importSystemConfiguration</string>
                      <string>___PACKAGENAME___-Prefix.pch:objC:importCoreServices</string>
                   </array>
@@ -90,28 +85,28 @@ self.window.rootViewController = self.navigationController;</string>
                <dict>
                   <key>Definitions</key>
                   <dict>
-                     <key>Classes/Service/___PACKAGENAMEASIDENTIFIER___APIClient.h</key>
+                     <key>Classes/Service/APIClient.h</key>
                      <dict>
                         <key>Path</key>
-                        <string>Auth.None/___PACKAGENAMEASIDENTIFIER___APIClient.h</string>
+                        <string>Auth.None/APIClient.h</string>
                         <key>Group</key>
                         <key>Service</key>
                      </dict>
-                     <key>Classes/Service/___PACKAGENAMEASIDENTIFIER___APIClient.m</key>
+                     <key>Classes/Service/APIClient.m</key>
                      <dict>
                         <key>Path</key>
-                        <string>Auth.None/___PACKAGENAMEASIDENTIFIER___APIClient.m</string>
+                        <string>Auth.None/APIClient.m</string>
                         <key>Group</key>
                         <key>Service</key>
                      </dict>
-                     <key>Classes/Controllers/___VARIABLE_classPrefix:identifier___ViewController.h</key>
+                     <key>Classes/Controllers/ViewController.h</key>
                      <dict>
                         <key>Path</key>
                         <string>Auth.None/ViewController.h</string>
                         <key>Group</key>
                         <key>Controllers</key>
                      </dict>
-                     <key>Classes/Controllers/___VARIABLE_classPrefix:identifier___ViewController.m</key>
+                     <key>Classes/Controllers/ViewController.m</key>
                      <dict>
                         <key>Path</key>
                         <string>Auth.None/ViewController.m</string>
@@ -121,38 +116,38 @@ self.window.rootViewController = self.navigationController;</string>
                   </dict>
                   <key>Nodes</key>
                   <array>
-                     <string>Classes/Controllers/___VARIABLE_classPrefix:identifier___ViewController.h</string>
-                     <string>Classes/Controllers/___VARIABLE_classPrefix:identifier___ViewController.m</string>
-                     <string>Classes/Service/___PACKAGENAMEASIDENTIFIER___APIClient.h</string>
-                     <string>Classes/Service/___PACKAGENAMEASIDENTIFIER___APIClient.m</string>
+                     <string>Classes/Controllers/ViewController.h</string>
+                     <string>Classes/Controllers/ViewController.m</string>
+                     <string>Classes/Service/APIClient.h</string>
+                     <string>Classes/Service/APIClient.m</string>
                   </array>
                </dict>
                <key>HTTP Basic</key>
                <dict>
                   <key>Definitions</key>
                   <dict>
-                     <key>Classes/Service/___PACKAGENAMEASIDENTIFIER___APIClient.h</key>
+                     <key>Classes/Service/APIClient.h</key>
                      <dict>
                         <key>Path</key>
-                        <string>Auth.BasicDigest/___PACKAGENAMEASIDENTIFIER___APIClient.h</string>
+                        <string>Auth.BasicDigest/APIClient.h</string>
                         <key>Group</key>
                         <key>Service</key>
                      </dict>
-                     <key>Classes/Service/___PACKAGENAMEASIDENTIFIER___APIClient.m</key>
+                     <key>Classes/Service/APIClient.m</key>
                      <dict>
                         <key>Path</key>
-                        <string>Auth.BasicDigest/___PACKAGENAMEASIDENTIFIER___APIClient.m</string>
+                        <string>Auth.BasicDigest/APIClient.m</string>
                         <key>Group</key>
                         <key>Service</key>
                      </dict>
-                     <key>Classes/Controllers/___VARIABLE_classPrefix:identifier___ViewController.h</key>
+                     <key>Classes/Controllers/ViewController.h</key>
                      <dict>
                         <key>Path</key>
                         <string>Auth.BasicDigest/ViewController.h</string>
                         <key>Group</key>
                         <key>Controllers</key>
                      </dict>
-                     <key>Classes/Controllers/___VARIABLE_classPrefix:identifier___ViewController.m</key>
+                     <key>Classes/Controllers/ViewController.m</key>
                      <dict>
                         <key>Path</key>
                         <string>Auth.BasicDigest/ViewController.m</string>
@@ -162,38 +157,38 @@ self.window.rootViewController = self.navigationController;</string>
                   </dict>
                   <key>Nodes</key>
                   <array>
-                     <string>Classes/Controllers/___VARIABLE_classPrefix:identifier___ViewController.h</string>
-                     <string>Classes/Controllers/___VARIABLE_classPrefix:identifier___ViewController.m</string>
-                     <string>Classes/Service/___PACKAGENAMEASIDENTIFIER___APIClient.h</string>
-                     <string>Classes/Service/___PACKAGENAMEASIDENTIFIER___APIClient.m</string>
+                     <string>Classes/Controllers/ViewController.h</string>
+                     <string>Classes/Controllers/ViewController.m</string>
+                     <string>Classes/Service/APIClient.h</string>
+                     <string>Classes/Service/APIClient.m</string>
                   </array>
                </dict>
                <key>HTTP Digest</key>
                <dict>
                   <key>Definitions</key>
                   <dict>
-                     <key>Classes/Service/___PACKAGENAMEASIDENTIFIER___APIClient.h</key>
+                     <key>Classes/Service/APIClient.h</key>
                      <dict>
                         <key>Path</key>
-                        <string>Auth.BasicDigest/___PACKAGENAMEASIDENTIFIER___APIClient.h</string>
+                        <string>Auth.BasicDigest/APIClient.h</string>
                         <key>Group</key>
                         <key>Service</key>
                      </dict>
-                     <key>Classes/Service/___PACKAGENAMEASIDENTIFIER___APIClient.m</key>
+                     <key>Classes/Service/APIClient.m</key>
                      <dict>
                         <key>Path</key>
-                        <string>Auth.BasicDigest/___PACKAGENAMEASIDENTIFIER___APIClient.m</string>
+                        <string>Auth.BasicDigest/APIClient.m</string>
                         <key>Group</key>
                         <key>Service</key>
                      </dict>
-                     <key>Classes/Controllers/___VARIABLE_classPrefix:identifier___ViewController.h</key>
+                     <key>Classes/Controllers/ViewController.h</key>
                      <dict>
                         <key>Path</key>
                         <string>Auth.BasicDigest/ViewController.h</string>
                         <key>Group</key>
                         <key>Controllers</key>
                      </dict>
-                     <key>Classes/Controllers/___VARIABLE_classPrefix:identifier___ViewController.m</key>
+                     <key>Classes/Controllers/ViewController.m</key>
                      <dict>
                         <key>Path</key>
                         <string>Auth.BasicDigest/ViewController.m</string>
@@ -203,38 +198,38 @@ self.window.rootViewController = self.navigationController;</string>
                   </dict>
                   <key>Nodes</key>
                   <array>
-                     <string>Classes/Controllers/___VARIABLE_classPrefix:identifier___ViewController.h</string>
-                     <string>Classes/Controllers/___VARIABLE_classPrefix:identifier___ViewController.m</string>
-                     <string>Classes/Service/___PACKAGENAMEASIDENTIFIER___APIClient.h</string>
-                     <string>Classes/Service/___PACKAGENAMEASIDENTIFIER___APIClient.m</string>
+                     <string>Classes/Controllers/ViewController.h</string>
+                     <string>Classes/Controllers/ViewController.m</string>
+                     <string>Classes/Service/APIClient.h</string>
+                     <string>Classes/Service/APIClient.m</string>
                   </array>
                </dict>
                <key>AeroGear Security</key>
                <dict>
                   <key>Definitions</key>
                   <dict>
-                     <key>Classes/Service/___PACKAGENAMEASIDENTIFIER___APIClient.h</key>
+                     <key>Classes/Service/APIClient.h</key>
                      <dict>
                         <key>Path</key>
-                        <string>Auth.AGSecurity/___PACKAGENAMEASIDENTIFIER___APIClient.h</string>
+                        <string>Auth.AGSecurity/APIClient.h</string>
                         <key>Group</key>
                         <key>Service</key>
                      </dict>
-                     <key>Classes/Service/___PACKAGENAMEASIDENTIFIER___APIClient.m</key>
+                     <key>Classes/Service/APIClient.m</key>
                      <dict>
                         <key>Path</key>
-                        <string>Auth.AGSecurity/___PACKAGENAMEASIDENTIFIER___APIClient.m</string>
+                        <string>Auth.AGSecurity/APIClient.m</string>
                         <key>Group</key>
                         <key>Service</key>
                      </dict>
-                     <key>Classes/Controllers/___VARIABLE_classPrefix:identifier___ViewController.h</key>
+                     <key>Classes/Controllers/ViewController.h</key>
                      <dict>
                         <key>Path</key>
                         <string>Auth.AGSecurity/ViewController.h</string>
                         <key>Group</key>
                         <key>Controllers</key>
                      </dict>
-                     <key>Classes/Controllers/___VARIABLE_classPrefix:identifier___ViewController.m</key>
+                     <key>Classes/Controllers/ViewController.m</key>
                      <dict>
                         <key>Path</key>
                         <string>Auth.AGSecurity/ViewController.m</string>
@@ -244,10 +239,10 @@ self.window.rootViewController = self.navigationController;</string>
                   </dict>
                   <key>Nodes</key>
                   <array>
-                     <string>Classes/Controllers/___VARIABLE_classPrefix:identifier___ViewController.h</string>
-                     <string>Classes/Controllers/___VARIABLE_classPrefix:identifier___ViewController.m</string>
-                     <string>Classes/Service/___PACKAGENAMEASIDENTIFIER___APIClient.h</string>
-                     <string>Classes/Service/___PACKAGENAMEASIDENTIFIER___APIClient.m</string>
+                     <string>Classes/Controllers/ViewController.h</string>
+                     <string>Classes/Controllers/ViewController.m</string>
+                     <string>Classes/Service/APIClient.h</string>
+                     <string>Classes/Service/APIClient.m</string>
                   </array>
                </dict>
             </dict>
